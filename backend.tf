@@ -6,8 +6,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "devops-expert-terraform-state-files"
-    key    = "development/terraform.tfstate"
+    //bucket = "devops-expert-terraform-state-files"
+    //key    = "development/terraform.tfstate"
+    bucket = var.bucket
+    key = var.key
     region = "eu-west-1"
   }
 

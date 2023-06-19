@@ -21,6 +21,11 @@ variable "default_tags" {
   type        = map(any)
   default = {
     "Name" = "Development Environment"
+    "Dept"        = "development"
+    "can destroy" = "yes"
   }
 }
+
+    variable "bucket" {}
+    variable "key" {}
 
