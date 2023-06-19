@@ -1,7 +1,7 @@
 //This is the security group for the development environment
 
 resource "aws_security_group" "ec2_sg" {
-  name        = "From_terraform_allow_SSH_and_HTTP"
+  name        = var.sg_name
   description = "Allow SSH and HTTP Connection"
   vpc_id      = "vpc-0de121ec0ecf8eeb6"
 
